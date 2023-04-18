@@ -1,0 +1,121 @@
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(255, 207, 0);
+  font-size: medium;
+  transition: none 0s ease 0s;
+  transform: translateY(0px) translateZ(0px);
+  border-bottom: 10px solid rgb(255, 207, 0);
+  border-top: 10px solid rgb(255, 207, 0);
+  z-index: 3;
+}
+
+.lego-icon {
+  position: relative;
+  left: 3%;
+  width: 10%;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.discovery {
+  color:black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: 600;
+  position: absolute;
+  left: 120px;
+  top: 20px;
+  text-decoration: none;
+}
+
+.discovery:hover {
+  text-decoration: underline;
+}
+
+.search-input {
+  font-family: Arial, Helvetica, sans-serif;
+  color:#0d0805;
+  background-color: rgb(255, 207, 0);
+  position: relative;
+  bottom: 10px;
+  text-decoration: none;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 30px;
+  margin-right: 10px;
+}
+
+.search-input:hover {
+  background-color: white;
+  border: none;
+}
+
+.search-input:focus {
+  outline: none;
+  border: none;
+}
+
+.search {
+  display: inline-block;
+  padding: 10px 10px 5px 10px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 5px;
+  background-color: rgb(255, 207, 0);
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+  margin-right: 20px;
+}
+
+.search:hover {
+  background-color: white;
+}
+
+.search-icon {
+  width: 20px;
+  height: auto;
+}
+
+.search-label {
+  position: relative;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .search-input {
+    width: 50%;
+  }
+
+  .search {
+    width: 10%;
+    max-width: 70px;
+  }
+
+  .search-label {
+    display: none;
+  }
+}
+
+label {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+label[for="searchInput"] {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
