@@ -1,0 +1,1 @@
+export const REBRICKABLE_API_KEY = process.env.REACT_APP_REBRICKABLE_API_KEY
